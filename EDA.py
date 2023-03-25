@@ -18,6 +18,8 @@ import pandas as pd
 import numpy as np
 import sklearn
 
+import json
+
 import random
 import io
 import os
@@ -33,4 +35,13 @@ def set_random(seed=43):
 
 set_random()
 
-data_dir = "C:\Users\robas\Documents\Code\USD_Capstone\data"
+cwd = os.getcwd() 
+data_dir = (cwd + "\data")
+print(data_dir)
+
+train_df = pd.read_csv(os.path.join(data_dir, "train.csv"))
+#train_df["path"] = data_dir + "\" + train_df["path"]
+
+
+
+
