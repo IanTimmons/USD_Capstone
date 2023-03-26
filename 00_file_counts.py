@@ -53,6 +53,7 @@ plt.xticks(rotation=45)
 plt.xlabel('Participant ID')
 plt.ylabel('File Count')
 plt.title('File Count by Participant ID')
-plt.show()
 plt.savefig('File Count by Participant ID')
+plt.show()
+
 
